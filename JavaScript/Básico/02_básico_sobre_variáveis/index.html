@@ -1,0 +1,206 @@
+<html>
+    <script>
+
+        // 1. Variáveis
+        var peso = 70;
+        var altura = 2;
+        var resultado = peso / altura;
+        console.log(resultado);
+
+        // 2. Var Scoped
+
+        // var equivalente a uma "variável global"
+        var x = 10;
+        console.log("x", x)
+
+        // Escopo local
+        {
+            console.log("x", x)
+            x = 20;
+            var y = 30;
+        }
+
+        console.log("x", x)
+        console.log("y", y)
+
+        // 3. Let Scoped
+
+        // let equivalente a uma "variável local"
+
+        let a = 10;
+        console.log("a =", a);
+
+        // Definindo um escopo local
+        {
+            console.log("a =", a)
+
+            a = 100;
+
+            let b = 20;
+            console.log("b =", b);
+        };
+
+        console.log("a = ", a);
+        console.log("b = ", b);
+        
+
+        // 4. Const Scoped
+
+        // const equivalente a uma "variável local" que não pode ser alterada
+        const c = 10;
+        console.log("c =", c);
+
+        // Definindo um escopo local
+        {
+            console.log("c =", c)
+            c = 100;
+            const d = 20;
+        }
+
+        console.log("c = ", c);
+        console.log("d = ", d);
+
+        // 5. Nomes e Regras
+
+        // Não pode conter espaços
+        let nomeCompleto = "João da Silva";
+
+        // Preicisa começar com uma letra, _ ou $
+        let num1 = 10;
+        let num2 = 15;
+
+        // Case Sensitive
+        let cpf = "123.456.789-00";
+        let Cpf = "123.456.789-00";
+        let CPF = "123.456.789-00";
+
+        // Palavras reservadas
+        // let let = 10;
+
+        // 6. Atribuir ao declarar
+
+        let x // undefined
+        console.log(typeof x)
+        x = 10;
+        console.log(x)
+        console.log(typeof x)
+        x = "A"
+        console.log(typeof x)
+
+        // 7. Agrupamento de declarações
+
+        let name, age, address;
+
+        name = "João";
+        age = 30;
+        console.log("Nome:", name);
+        console.log("Idade:", age);
+        console.log("Endereço:", address);
+
+        // 8. Concatenação e Interpolação
+
+        // let name, age;
+        name = "João";
+        age = 30;
+
+        address = {
+            street: "Rua das Flores",
+            city: "Recife",
+        };
+
+        console.log("Nome:", name);
+        console.log("Idade:", age);
+
+        // Concatenação
+        // João tem 30 anos e mora na Rua das Flores.
+
+        console.log(name + " tem " + age + " anos e mora na " + JSON.stringify(address))
+        
+        console.log(name + " tem " + age + 
+        " anos e mora na " + address.street + ", " + address.city + ".");
+
+        // Interpolação
+        console.log(`${name} tem ${age} anos e mora na ${address.street}, Recife.`)
+
+
+        // 9. Object
+
+        const person = {
+            name: "João",
+            age: 30,
+            address: {
+                street: "Rua das Flores",
+                city: "Recife",
+            },
+        };
+
+        console.log(person.name);
+        console.log(person.address.street);
+
+        person.name = "Maria";
+        console.log(person.name);
+
+        console.log("Antes")
+        console.log(person);
+
+        person.hairColor = "black"; //Adicionar uma nova propriedade ao objeto
+
+        console.log("Depois")
+        console.log(person);
+
+        let e = 10;
+        console.log(e);
+
+        e = 20;
+        console.log(e);
+
+
+        // 10. Array
+
+        const persons = [
+            {
+                name: "João", 
+                age: 15
+            }, 
+            
+            {
+                name:"Maria",
+                age: 34,
+            }, 
+            {
+                name: "José",
+                age: 20,
+            }
+        ]; 
+
+        const persons2 = [{name:"João", age: 15}, {name:"MAria", age: 30}]; 
+
+
+
+        console.log(persons[0].name);
+
+        console.log(persons2.length);
+
+
+        // 11. Atribuições
+
+        let num = 10;
+
+        console.log(num);
+
+        // num = num + 1;
+        num++; // Retorna e atribui
+        console.log(num);
+
+        ++num; // Atribui e retorna
+        console.log(num);
+
+
+
+
+
+
+
+
+    </script>
+</html>
