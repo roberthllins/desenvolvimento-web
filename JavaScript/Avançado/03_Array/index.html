@@ -1,0 +1,65 @@
+<html>
+    <script>
+        // 01. Métodos básicos de manipulação de arrays
+
+        let people = ['Rodrigo', 'Carlos', 'José', 'Maria', 'Ana'];
+        
+        console.log(people[2]);
+        console.log(people[people.length - 1]);
+
+        //Retorna "fatias" do array
+        console.log(people.slice(2));
+        console.log(people.slice(1, 3));
+        console.log(people.slice(3, people.length));
+        
+        //Remove elementos do array
+        people.splice(0, 3);
+        console.log(people);
+
+        //Adiciona elementos ao array
+        people.push('Rodrigo'); //Adiciona no final
+        people.unshift('José'); //Adiciona no início
+        console.log(people);
+
+        //Remover elementos do array (final e início)
+        people.pop(); //Remove o último (e retorna o elemento removido)
+        people.shift(); //Remove o primeiro (e retorna o elemento removido)
+        console.log(people);
+
+        // Localiuzação de elementos
+        let index = people.indexOf('Ana');
+        console.log(index);
+
+        people[1] = 'Carlos Eduardo';
+        people[8] = 'Júlia';   
+        people[9] = 'Júlia';
+        people[10] = 'Maria';
+        console.log(people);
+
+        let index2 = people.indexOf('Júlia');
+        console.log(index2);
+
+        // 02. Concatenando arrays
+
+        let set1 = [1, 2, 3, 4, 5];
+        let set2 = [6, 7, 8, 9, 10];
+        let set3 = [11, 12, 13, 14, 15];
+
+        console.log(set1 + set2) // na prática, cria uma string (coersion)
+        console.log([set1, set2]) // cirar um novo array com 2 sub-arrays
+        // [1, 2, 3, 4, 5]
+        console.log(set1.concat(set2).concat(set3)); // cria um novo array
+
+
+        // 03. Desestruturação de arrays
+
+        let set4 = [5, 1, 3, 4, 5];
+
+        let [n1, n2, n3] = set4;
+
+        console.log(n1);
+        console.log(n2);
+        console.log(n3);
+
+    </script>
+</html>

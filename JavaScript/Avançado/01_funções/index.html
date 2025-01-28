@@ -1,0 +1,101 @@
+<html>
+    <script>
+
+        // 01. Funções sem retorno
+        function sayHello(name, lastName){
+            console.log(`Olá ${name} ${lastName}. Bem-vindo(a) ao Start.`);
+        };
+
+        sayHello("Fulano", "de Tal");
+        sayHello("Ciclano", "da Silva");
+
+
+        // 02. Funções com retorno
+
+        function sum(n1, n2){
+            return n1 + n2;
+        };
+
+        let result = sum(5, 10);
+        console.log(result);
+
+        // console.log(sum(15, 20, 30))
+
+        // 03. Objetos Arguments
+
+        function sumAll(){
+            let res = 0;
+
+            for (const n of arguments){
+                res = res + n;
+            };
+
+            return res;
+        };
+
+        console.log(sumAll(1, 2, 3));
+        console.log(sumAll(5, 2, 3, 8, 9));
+        console.log(sumAll(5, 5));
+
+        // 04. Valor vs Referência
+
+        // Por valor
+        function mult(n){
+            n *= n;
+            // n = n * n;
+            return n;
+        };
+
+        let numVal = 15;
+        console.log(mult(numVal));
+        console.log(numVal);
+
+        // Por referência
+        function multObj(obj){
+            obj.valor *= obj.valor;
+            return obj
+        }
+
+        const numObj = {valor: 15};
+        console.log(multObj(numObj));
+        console.log(numObj)
+
+        // 05. Function Scoped
+
+        // console.log(mult2(5));
+        
+        const mult2 = function (n) {
+            n *= n;
+            return n;
+        };
+
+        // console.log(mult2(5));
+
+        // 06. Arrow Function
+
+        const mult3 = (n) => (n*n);
+
+        console.log(mult3(4));
+
+        // 07. Funções Callbacks
+
+        function mult4(values, func) {
+            for(let i=0; i < values.length; i++){
+                values[i] = func(values[i]);
+            };
+
+            return values;
+        };
+
+        const values = [1, 2, 3, 4, 5];
+        const func = (n) => (n*2);
+
+        // console.log(func(5));
+
+        console.log(mult4(values, func));
+        
+
+
+
+    </script>
+</html>

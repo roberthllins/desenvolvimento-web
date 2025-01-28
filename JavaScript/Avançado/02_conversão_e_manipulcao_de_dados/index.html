@@ -1,0 +1,83 @@
+<html>
+    <script>
+        // 1. Type casting e Type coersion
+
+        console.log('9' + 5); // Type coersion
+        console.log(Number('9') + 5); // Type casting
+
+        // 2. Number e String <-> Boolean
+
+        // ' ' -> false
+        // '2' -> true
+        // 0 -> false
+        // 1 -> true
+
+        console.log(Boolean(0));
+        console.log(Boolean(1));
+        console.log(Boolean(''));
+        console.log(Boolean('2'));
+
+        console.log(Number(true)); //1
+        console.log(Number(false)); // 0
+
+        console.log(String(true)); //typeof -> string
+        console.log(String(false)); //typeof -> string
+
+
+        // 3. String <-> Array
+
+        // Uma string já é um array de caracteres
+        let name = 'Rodrigo';
+        console.log(name[4])
+
+        // Escreve na vertical
+        for (const v of name){
+            console.log(v);
+        }
+
+        console.log(name.length);
+        console.log(name.split(''));
+        let values = [1, 2, 3, 4, 5];
+        console.log(values.join('-'));
+
+        // 4. Casas decimais - formatação e arredondamento
+
+        let value = 12345.4;
+
+        console.log(value.toFixed(2));
+
+        console.log(Math.ceil(value)); // arredonda para cima
+        console.log(Math.floor(value)); // arredonda para baixo
+        console.log(Math.round(value)); // arredonda para o mais próximo
+
+        // 5. Contatndo dígitos
+
+        let num = 12345
+        let name2 = 'Rodrigo';
+        console.log(name2.length);
+        console.log(String(num).length)
+
+        // 6. Separando e juntando strings
+
+        let frase = 'O rato roeu a roupa';
+        console.log(frase.split(' ').join('-'));
+
+        // 7. Maiúsculas e minúsculas
+
+        let frase2 = 'Viver é legal';
+        console.log(frase2.toUpperCase());
+        console.log(frase2.toLowerCase());
+
+
+        // 8. Localizando strings
+
+        let frase3 = 'O rato roeu a roupa do rei de Roma';
+
+        console.log(frase3.includes('roma'));
+        console.log(frase3.toLocaleUpperCase().includes('ROMA'));
+        
+
+
+
+    </script>
+</html>
