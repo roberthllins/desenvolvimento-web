@@ -1,0 +1,55 @@
+<html>
+    <script>
+        // 01. Filter
+
+        const number = [10, 18, 1, 15, 35, 2, 55]
+
+        // let res = []
+        // for (const n of number) {
+        //     if (n > 10) {
+        //         res.push(n)
+        //         // console.log(n)
+        //     }
+        // }
+        // console.log(res)
+
+        let res = number.filter((n) => n >10)
+        console.log(res)
+
+        // function maior10(n){
+        //     return n > 10
+        // }
+
+        const people = [
+            {name:'Rodrigo', gender: 'M', age: 23},
+            {name:'Carlos', gender:'M', age: 19},
+            {name:'Maria', gender:'F', age: 67},
+            {name:'Leticia', gender:'F', age:20},
+        ]
+
+        const m = people.filter((pessoa) => pessoa.age >= 18 && pessoa.age <= 25 && pessoa.gender === 'F')
+        console.log(m)
+
+
+        // 02. Map
+
+        const numbers = [1, 2, 3, 4, 5, 6]
+        const number02 = numbers.map((n) => n * 2)
+        console.log(number02)
+
+        const fahrenheit = [0, 32, 45, 47, 91, 121]
+        const celcius = fahrenheit.map((t)=> Math.round((t - 32)*5 / 9))
+        console.log(celcius)
+
+        const people2 = [
+            {name:'João', age: 40},
+            {name:'Pedro', age: 14},
+            {name:'Davi', age: 9},
+        ]
+
+        const peopleNormalized = people2.map((p)=> p.name.toUpperCase())
+        console.log(peopleNormalized)
+
+
+    </script>
+</html>

@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+
+}
+
+h1 {
+    color:chocolate ;
+    font-size: 50px;      
+}
+
+/* . -> Para class */
+.class_container {
+    background-color: rgb(10, 129, 10);
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* # -> Para id */
+#id_container {
+    /* height: 200px; */
+    background-color: rgb(3, 79, 3);
+
+}
+
+h2 {
+    color: rgb(3, 79, 3);
+}
+
+.class_container h2{
+    color:black
+}
+
+#id_container h2{
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+}

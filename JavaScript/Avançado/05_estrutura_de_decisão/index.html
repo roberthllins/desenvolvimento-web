@@ -1,0 +1,89 @@
+<html>
+    <script>
+        // 01. if
+        if (true){
+            console.log('Verdadeiro');
+        };
+
+        // Compara somente o valor
+        if ("1" == 1){
+            console.log('Verdadeiro');
+        };
+
+        // Compara o tipo e valor
+        if ("1" === 1){
+            console.log('Verdadeiro');
+        };
+
+        if (1 === 1){
+            console.log('Verdadeiro');
+        };
+
+        if ("1" !== 1){
+            console.log('Verdadeiro');
+        };
+
+
+        if (1 < 2 && 2 < 3){
+            console.log('Verdadeiro');
+        };
+
+        // 02. If Else
+        
+        if (false) {
+            console.log('Verdadeiro')
+        } else {
+            console.log("Falso")
+        }
+
+        // 03. If Else If 
+
+        const valor = 3
+
+        if (valor <= 1) {
+            console.log('COndição 1')
+        } else  if (valor > 1 && valor <=2) {
+            console.log('Condição 2')
+        } else if (valor > 2 && valor <= 3){
+            console.log('Condição 3')
+        } else {
+            console.log('Outra condição')
+        }
+
+        // 04. Swith 
+
+        let valor2 = 10
+
+        switch (valor2) {
+            case 1:
+                console.log('Condição 01')
+                break
+            case 2:
+                console.log('Condição 02')
+                break
+            case 3:
+            case 4:
+                console.log('Condição 3 e 4')
+                break
+
+            default:
+                console.log('Outro caso')
+                break
+        }
+
+        // 05. Try Catch 
+
+        try {
+            // Tentar fazer algo
+            // Consultar uma API
+            // Buscar dados em um banco de dados
+        } catch (error) {
+            // erro
+            //alert()
+        } finally {
+            // Sempre executa ao final (opcional)
+        }
+
+
+    </script>
+</html>

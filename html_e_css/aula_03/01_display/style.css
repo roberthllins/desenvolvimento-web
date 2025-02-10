@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_pai {
+    background-color:coral;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.container_filho {
+    background-color: black;
+
+    /* Inline -> Medidias são ignoradas */
+    width: 200px;
+    height: 200px;
+
+    display: inline;
+}
+
+.container_filho_2 {
+    background-color: black;
+
+    /* Block -> Medidias são consideradas */
+    /* Eles vão para a próxima linha */
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.container_filho_3 {
+    background-color: black;
+
+    /* Inline-block -> Medidias são consideradas */
+    /* Vão ficar lado a lado */
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+}
+
+
+
+

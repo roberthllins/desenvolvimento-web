@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Tabelas HTML</h1>
+
+    <table>
+        <!-- Primeira linha da tabela -->
+
+        <!-- tr define uma nova linha -->
+        <tr>
+            <!-- th define o título da coluna -->
+            <th>Nome</th> 
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <!-- Segunda linha -->
+         <tr>
+            <!-- td define o conteúdo da célula -->
+            <td>Lucas da Silva</td>
+            <td>30</td>
+            <td>Escritor</td>
+         </tr>
+         <!-- Terceira linha -->
+         <tr>
+            <td>João da Silva</td>
+            <td>25</td>
+            <td>Programador</td>
+         </tr>
+         <!-- Quarta linha -->
+          <tr>
+            <td>Maria da Silva</td>
+            <td>35</td>
+            <td>Professora</td>
+          </tr>
+    </table>
+
+    <h1>DIVs</h1>
+
+    <div class="class_container" id="id_container">
+        <h2 id="titulo_start">Projeto Start</h2>
+        <p>Onde você aprende a programar!</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+    <div class="class_container">
+        <h2 id="titulo_linguagens">Linguagens que mais gosto</h2>
+        <p>Minhas linguagens de programação favoritas são:</p>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>Kotlin</li>
+            <li>PHP</li>
+            <li>Java</li>
+        </ul>
+    </div>
+
+
+    <h1>Formulários</h1>
+
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <input type="submit">
+    </form>
+
+
+    <h2>Escolha a sua ferramenta favorita:</h2>
+    <form action="">
+        <input type="radio" id="html" name="fav_linguagens" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_linguagens" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_linguagens" value="JAVASCRIPT">
+        <label for="javascript">JavaScript</label>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Motos favoritas</h2>
+    <form action="">
+        <input type="checkbox" id="ninja" name="fav_motos" value="NINJA 400">
+        <label for="ninja">Ninja 400</label>
+        <input type="checkbox" id="mt" name="fav_motos" value="MT 09">
+        <label for="mt">MT 09</label>
+        <input type="checkbox" id="cbr" name="fav_motos" value="CBR 600 RR">
+        <label for="cbr">CBR 600RR</label>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
