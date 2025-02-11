@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.grid {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #312f2f;
+}
+
+
+
+.grid {
+    display: grid;
+}
+
+
+.grid-template-columns{
+    grid-template-columns: 200px 100px 50px;
+    grid-template-rows: 200px 100px;
+}
+
+.grid-template-columns-2 {
+    grid-template-columns: 1fr 2fr 50px 50px;
+}
+
